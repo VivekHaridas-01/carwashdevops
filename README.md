@@ -21,13 +21,9 @@ CarWashDevOps
 3. Once the packages have updated, install Redis with: `sudo apt install redis-server`
 4. Confirm installation and get the version number: `redis-server --version`
 
-To start running your Redis server: 
-`sudo service redis-server start`
+## Getting Started with Redis on WSL
 
-Check to see if redis is working (redis-cli is the command line interface utility to talk with Redis): 
-`redis-cli ping`
-
-This should return a reply of "PONG".
-
-To stop running your Redis server: 
-`sudo service redis-server stop`
+- To start running your Redis server: `sudo service redis-server start`
+- Check to see if redis is working (This should return a reply of "PONG".): `redis-cli ping`
+- To stop running your Redis server: `sudo service redis-server stop`
+- Restart redis from wsl: `sudo service redis-server restart`
