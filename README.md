@@ -14,9 +14,10 @@ Setup
 - Alter Retention Time for particular topic: `.\bin\windows\kafka-configs.bat --zookeeper localhost:2181 --alter --entity-type topics --entity-name TestTopic --add-config retention.ms=120`
 
 
-## Redis Installation on WSL
+## Redis Installation for Windows.
 
-1. Open your WSL terminal (ie. Ubuntu).
+Note: For this you will need Windows Subsystem for Linux
+1. Open your WSL terminal (any Linux Flavour of Choice).
 2. Update your Ubuntu packages: `sudo apt update` `sudo apt upgrade`
 3. Once the packages have updated, install Redis with: `sudo apt install redis-server`
 4. Confirm installation and get the version number: `redis-server --version`
@@ -24,6 +25,12 @@ Setup
 ## Getting Started with Redis on WSL
 
 - To start running your Redis server: `sudo service redis-server start`
-- Check to see if redis is working (This should return a reply of "PONG".): `redis-cli ping`
+- Check to see if redis is working: `redis-cli ping`. This should return a reply of "PONG".
 - To stop running your Redis server: `sudo service redis-server stop`
 - Restart redis from wsl: `sudo service redis-server restart`
+
+## Accessing Redis server from Windows
+
+- For this you need to install RedisInsight
+- Once installed, enter the details of the server (localhost, port:6579)
+- Add databases and start working
