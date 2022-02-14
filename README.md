@@ -30,6 +30,8 @@ CarWashDevOps
 - Set password for Redis instance
   - Open terminal and connect redis-cli: `redis-cli`
   - Set passphrase: `CONFIG SET requirepass "password"`
+- Authenticate your instance: auth password
+- Get All Keys: KEYS *
 
 #### A Sample Test Program for Redis `redis_test.py`
 ```
